@@ -1,7 +1,6 @@
 class Xswap < Formula
   desc "Account switcher and quota monitor for Codex CLI"
   homepage "https://github.com/BryanPinheiro77/xswap"
-  version "0.3.0"
   license "MIT"
 
   on_macos do
