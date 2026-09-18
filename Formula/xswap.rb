@@ -5,21 +5,21 @@ class Xswap < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/BryanPinheiro77/xswap/releases/download/v0.4.0/xswap_v0.4.0_darwin_arm64.tar.gz"
-      sha256 "32e29906dc83722148f3b1c7cc7f75aa2f927203c74e55184a431bb9d7932e50"
+      url "https://github.com/BryanPinheiro77/xswap/releases/download/v0.4.1/xswap_v0.4.1_darwin_arm64.tar.gz"
+      sha256 "488e14a4042cc52493008a7ca7342d880c4c4f143d3e6d9fac5804b52188a51d"
     else
-      url "https://github.com/BryanPinheiro77/xswap/releases/download/v0.4.0/xswap_v0.4.0_darwin_amd64.tar.gz"
-      sha256 "765e53f95f3bff6a8c7b8554d5a649da7884aa1c481c7597aa2125dd0ada88a0"
+      url "https://github.com/BryanPinheiro77/xswap/releases/download/v0.4.1/xswap_v0.4.1_darwin_amd64.tar.gz"
+      sha256 "b6085352b1b5dc72fcb0c8a0e14af35fbb7c91c129e4df6734649a0cf34d88a5"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/BryanPinheiro77/xswap/releases/download/v0.4.0/xswap_v0.4.0_linux_arm64.tar.gz"
-      sha256 "4958698c2e2288cf8462d4557e0915fd9a5f2107519857e3f3e40c4955756daa"
+      url "https://github.com/BryanPinheiro77/xswap/releases/download/v0.4.1/xswap_v0.4.1_linux_arm64.tar.gz"
+      sha256 "51379ace406a8a37db01b01cedb07fb2eba9150d3e8871bb6fb550e5b50d1afa"
     else
-      url "https://github.com/BryanPinheiro77/xswap/releases/download/v0.4.0/xswap_v0.4.0_linux_amd64.tar.gz"
-      sha256 "e69c7d02a2e9bd7d0a09c6783c241b3f7c3b926ad26f73327a913db4ccad240b"
+      url "https://github.com/BryanPinheiro77/xswap/releases/download/v0.4.1/xswap_v0.4.1_linux_amd64.tar.gz"
+      sha256 "1ba8050ab78ecf0dd8f698cf7ad2649a59212911d03b3acbea9d4d599246ccd8"
     end
   end
 
