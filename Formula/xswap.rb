@@ -5,21 +5,21 @@ class Xswap < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/BryanPinheiro77/xswap/releases/download/v0.5.1/xswap_v0.5.1_darwin_arm64.tar.gz"
-      sha256 "2ed83680e6f5198dbefa72221e9c8874ff32a51866f5ef87d7090a998668be30"
+      url "https://github.com/BryanPinheiro77/xswap/releases/download/v0.5.2/xswap_v0.5.2_darwin_arm64.tar.gz"
+      sha256 "37b5fdaa9bd7684f2c8174dbf09ad9b20c6fa26f9d127ef0f0475cba4f898301"
     else
-      url "https://github.com/BryanPinheiro77/xswap/releases/download/v0.5.1/xswap_v0.5.1_darwin_amd64.tar.gz"
-      sha256 "aab39b99f649d9a5ce4f2ebf977317a02f580207b39a6c71cba39b0d36b7eced"
+      url "https://github.com/BryanPinheiro77/xswap/releases/download/v0.5.2/xswap_v0.5.2_darwin_amd64.tar.gz"
+      sha256 "7468a4124af7aa2121e7682ad9ff64d3c40821cbdffe1b84b0608c194970fab6"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/BryanPinheiro77/xswap/releases/download/v0.5.1/xswap_v0.5.1_linux_arm64.tar.gz"
-      sha256 "d78fd06d3479c6ee11aa593c0f855fb1e04cbcb9c6bd7679277847c2b5af0349"
+      url "https://github.com/BryanPinheiro77/xswap/releases/download/v0.5.2/xswap_v0.5.2_linux_arm64.tar.gz"
+      sha256 "e0d412e84cf6140dfbec91b434cc6388fe71beff5d96b9e3878ac0fa9d4349d6"
     else
-      url "https://github.com/BryanPinheiro77/xswap/releases/download/v0.5.1/xswap_v0.5.1_linux_amd64.tar.gz"
-      sha256 "39a8a2830eec932a5ff192775e2aa87b7d8a8d8eb75a8b459af94f70a8d34816"
+      url "https://github.com/BryanPinheiro77/xswap/releases/download/v0.5.2/xswap_v0.5.2_linux_amd64.tar.gz"
+      sha256 "67ae7bf8b2f9494ca35278e36068f2ac063c37706f33b249b5e4dbc15643c36f"
     end
   end
 
@@ -42,8 +42,9 @@ class Xswap < Formula
     <<~EOS
       The official Codex CLI must be installed before configuring XSwap.
       Run `xswap install` once to connect XSwap to the official Codex CLI.
+      Open a new terminal after installation so the durable wrapper takes precedence.
       XSwap installed by Homebrew is updated with `brew upgrade xswap`.
-      Before removing the formula, run `xswap uninstall` to restore Codex.
+      Before removing the formula, run `xswap uninstall` to remove the wrapper.
     EOS
   end
 
